@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		var userList = new Array();
+		userList.push({objId:"11",lcmz:"fff"});
+		userList.push({objId:"22",lcmz:"fff"});
+		$.ajax({
+			url:"localhost:28080/fxd/bcqb",
+			type:'POST',
+			data:JSON.stringify(userList),
+			dataType:"json",
+			success:function(data){
+			}
+		});
+
+	});
+
+</script>
+<body>
+11
+</body>
+</html>
